@@ -24,6 +24,7 @@
     <script src="js/skills.js"></script>
     <script src="js/reverse-change.js"></script>
     <script src="js/c-omok.js"></script>
+    <script src="js/ai-omok.js"></script>
 
   </head>
   <body>
@@ -115,6 +116,9 @@
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
+      <p class="explain">
+        게임을 직접 구동하는 모습의 영상.
+      </p>
       <p class="container">
         '교육과정 클러스터' 프로그래밍 교육에 참여하며
         당시 과제로 제작한 오목 게임입니다.
@@ -129,6 +133,7 @@
       <h2>웹 그래픽을 다뤄보자!<br>'데이 오브 타워'.</h2>
       <a class="button" href="https://seed-maker.github.io/day-of-tower/" target="_blank">바로가기</a>
       <img id="dot-scs" src="img/dot-screenshot.png">
+      <p class="explain">게임 구동 화면.</p>
       <p class="container">
         더 화려하고 웅장한 게임을 만들고 싶은 욕심이 커져서
         친구들과 모여 기획, 프로그래밍, 아트등
@@ -147,7 +152,22 @@
     <div id="ai-omok-page" class="page">
       <h2>알고리즘의 집합체!<br>'인공지능 오목'.</h2>
       <a href="https://hsh-game.github.io/omok" class="button" target="_blank">바로가기</a>
-      <img src="img/omok.png" id="omok-plate">
+  		<canvas id="board" width="1000" height="1000"></canvas>
+
+  		<script src="js/omok/game/core.js"></script>
+  		<script src="js/omok/game/stone.js"></script>
+  		<script src="js/omok/game/ban.js"></script>
+  		<script src="js/omok/game/win.js"></script>
+  		<script src="js/omok/canvas/get.js"></script>
+  		<script src="js/omok/canvas/stone.js"></script>
+  		<script src="js/omok/canvas/board.js"></script>
+  		<script src="js/omok/AI/core.js"></script>
+  		<script src="js/omok/AI/test.js"></script>
+
+      <p class="explain">
+        AI가 서로 대결을 한 상황.<br>
+        <a onclick="game.AIvsAI()">여기</a>를 눌러 다시보기.
+      </p>
       <p class="container">
         학교에서 '알고리즘 동아리'로 활동하여
         여러 문제를 알고리즘을 통해 해결하는 방법을
@@ -157,7 +177,13 @@
         경기할 수 있으며 더욱 좋은 그래픽으로 보여주도록 만들었습니다.
       </p>
       <img src="img/club-festival/0.jpg">
+      <p class="explain">
+        알고리즘 동아리의 게임을 홍보하는 모습.
+      </p>
       <img src="img/club-festival/1.jpg">
+      <p class="explain">
+        동아리 축제를 준비중인 모습.
+      </p>
       <p class="container">
         이렇게 만든 게임을 12월 말에
         학교 동아리 축제에서 발표하게 되었습니다.

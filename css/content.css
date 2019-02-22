@@ -4,6 +4,11 @@
   margin: auto;
 }
 
+.explain {
+  font-size: .9rem;
+  color: #808080 !important;
+}
+
 #catchphrase {
   margin: auto;
   padding: 1rem;
@@ -46,7 +51,7 @@
 
 #reverse-change-page *:not(.button) {
   padding: 1rem;
-  background: rgba(244, 244, 244, 0.95);
+  background: #f3f3f3;
 }
 
 #c-omok-page {
@@ -74,7 +79,10 @@
   }
 }
 
-#omok-plate {
+#board {
+  display: block;
+  width: 90%;
+  margin: auto;
   max-width: 400px !important;
 }
 

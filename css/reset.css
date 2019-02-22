@@ -6,3 +6,9 @@ body {
 img {
   width: 100%;
 }
+
+a {
+  cursor: pointer;
+  color: skyblue;
+  text-decoration: underline;
+}
