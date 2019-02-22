@@ -1,0 +1,104 @@
+.container {
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+}
+
+#catchphrase {
+  margin: auto;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#profile-image {
+  width: 60%;
+  max-width: 350px;
+  border-radius: 100%;
+  margin: 2.5rem auto;
+  border: 2px solid #dcdcdc;
+}
+
+#skills {
+  font-size: 2rem;
+}
+
+#skill-icons-wrapper {
+  padding: 1rem 0;
+  margin: 1rem auto;
+}
+
+#skill-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  width: 90%;
+  max-width: 650px;
+  margin: 3rem auto;
+}
+
+#skill-icons img {
+  width: 100%;
+  max-width: 150px;
+  margin: auto;
+}
+
+#reverse-change-page *:not(.button) {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#c-omok-page {
+  transition: background 1s, color 1s;
+}
+
+#dot-scs {
+  width: 90%;
+  max-width: 700px;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+#dot-cat {
+  animation: cat-move 1s infinite;
+  position: absolute;
+  width: 150px;
+  margin: -200px 0 0 -40px;
+  image-rendering: pixelated;
+}
+
+@keyframes cat-move {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#omok-plate {
+  max-width: 400px !important;
+}
+
+#ai-omok-page img {
+  display: block;
+  width: 90%;
+  max-width: 750px;
+  margin: 1rem auto;
+}
+
+#golden-apple-bucket {
+  animation: cat-move .33s infinite linear;
+  display: block;
+  width: 70%;
+  max-width: 300px;
+  margin: 1rem auto;
+  image-rendering: pixelated;
+}
+
+#ie-logo,
+#game-pad {
+  display: block;
+  width: 45%;
+  max-width: 240px;
+  margin: 1rem auto;
+}

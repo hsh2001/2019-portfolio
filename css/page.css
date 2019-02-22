@@ -1,0 +1,30 @@
+.page {
+  padding: 10vh 0 3rem 0;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.page:nth-child(even) {
+  background: #f3f3f3;
+}
+
+#main-page {
+  background-color: #b4d4e6;
+  background-image: url(../img/cloud.png);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 300px auto;
+  background-position: bottom;
+  color: #323232;
+}
+
+#reverse-change-page {
+  background-size: cover;
+}
+
+#school-community-page {
+  color: white;
+  background-image: url(../img/aj-school.JPG);
+  background-size: cover;
+  background-position: 30%;;
+}
