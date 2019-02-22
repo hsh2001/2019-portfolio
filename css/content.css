@@ -13,9 +13,9 @@
 
 #profile-image {
   width: 60%;
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 100%;
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   border: 2px solid #dcdcdc;
 }
 
@@ -46,7 +46,7 @@
 
 #reverse-change-page *:not(.button) {
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(244, 244, 244, 0.95);
 }
 
 #c-omok-page {
@@ -63,9 +63,8 @@
 
 #dot-cat {
   animation: cat-move 1s infinite;
-  position: absolute;
   width: 150px;
-  margin: -200px 0 0 -40px;
+  margin: auto;
   image-rendering: pixelated;
 }
 
