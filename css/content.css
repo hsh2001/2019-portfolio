@@ -1,3 +1,20 @@
+article {
+  display: grid;
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  article > div {
+    margin: 1rem;
+  }
+}
+
 .container {
   width: 90%;
   max-width: 650px;
@@ -9,13 +26,16 @@
   color: #808080 !important;
 }
 
-.screenshot {
+.screenshot,
+.phone-screenshot {
   width: 90%;
   max-width: 700px;
   margin: 1rem auto;
   padding: 0 !important;
-  border-radius: .5rem;
-  box-shadow: 5px 5px 5px 5px rgba(13, 13, 13, 0.5);
+}
+
+.phone-screenshot {
+  max-width: 250px;
 }
 
 .skills {
@@ -149,7 +169,6 @@
 #ai-omok-page img {
   display: block;
   width: 90%;
-  max-width: 750px;
   margin: 1rem auto;
 }
 
