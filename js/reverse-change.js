@@ -6,8 +6,8 @@ new Promise(
 ).then(async function() {
   const canvas = document.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        width = canvas.width = 1500,
-        height = canvas.height = 1500,
+        width = canvas.width = 750,
+        height = canvas.height = 750,
         len = 10,
         blockWidth = width / len,
         blockHeight = height / len;
@@ -17,6 +17,7 @@ new Promise(
     for (let k = -1; k < len; k++) {
       const x = k * blockWidth,
             y = i * blockHeight;
+
       ctx.fillStyle = color? '#f2f2f2' : 'black';
       ctx.fillRect(x, y, blockWidth, blockHeight);
       color = 1 - color;
@@ -29,7 +30,10 @@ new Promise(
         canvas.toDataURL()
       })`;
 
-      await wait(1);
+      if (color) await wait(100);
+
+      ctx.fillStyle = '#f3f3f3';
+      ctx.fillRect(0, 0, width, height);
     }
   }
 

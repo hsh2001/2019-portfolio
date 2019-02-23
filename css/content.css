@@ -9,6 +9,75 @@
   color: #808080 !important;
 }
 
+.screenshot {
+  width: 90%;
+  max-width: 700px;
+  margin: 1rem auto;
+  padding: 0 !important;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 5px 5px rgba(13, 13, 13, 0.5);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 1rem auto;
+}
+
+.skills * {
+  padding: 1rem .5rem;
+}
+
+.skills .skill {
+  margin: .5rem;
+  border-radius: .5rem;
+}
+
+.skills .HTML {
+  background: #eb9d42 !important;
+  color: #323232;
+}
+
+.skills .CSS {
+  background: #429aeb !important;
+  color: #f3f3f3;
+}
+
+.skills .JavaScript {
+  background: #ede75c !important;
+  color: #323232;
+}
+
+.skills .C {
+  background: #323232 !important;
+  color: #f3f3f3;
+}
+
+.skills .JSON {
+  background: #747474 !important;
+  color: #f3f3f3;
+}
+
+.skills .PHP {
+  background: #0a62f9 !important;
+  color: #f3f3f3;
+}
+
+.skills .MySQL {
+  background: #f9b60a !important;
+  color: #f3f3f3;
+}
+
+.skills :nth-child(1) {
+  background: #555 !important;
+  color: white;
+}
+
+.skills :nth-child(2) {
+  background: #323232 !important;
+  color: white;
+}
+
 #catchphrase {
   margin: auto;
   padding: 1rem;
@@ -50,20 +119,11 @@
 }
 
 #reverse-change-page *:not(.button) {
-  padding: 1rem;
-  background: #f3f3f3;
+  background: rgba(244, 244, 244, 0.95);
 }
 
 #c-omok-page {
   transition: background 1s, color 1s;
-}
-
-#dot-scs {
-  width: 90%;
-  max-width: 700px;
-  margin: 1rem auto;
-  border-radius: .5rem;
-  box-shadow: 5px 5px 5px 5px gray;
 }
 
 #dot-cat {
@@ -93,16 +153,6 @@
   margin: 1rem auto;
 }
 
-#golden-apple-bucket {
-  animation: cat-move .33s infinite linear;
-  display: block;
-  width: 70%;
-  max-width: 300px;
-  margin: 1rem auto;
-  image-rendering: pixelated;
-}
-
-#ie-logo,
 #game-pad {
   display: block;
   width: 45%;
