@@ -9,13 +9,10 @@
 }
 
 #main-page {
-  background-color: #b4d4e6;
-  background-image: url(../img/cloud.png);
-  background-position: top;
-  background-repeat: repeat-x;
-  background-size: 300px auto;
+  background-color: #ffffff;
+  background-image: url(../svg/main-bg.svg);
   background-position: bottom;
-  color: #323232;
+  background-size: cover;
 }
 
 #reverse-change-page {

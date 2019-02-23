@@ -204,24 +204,6 @@
     <div id="ai-omok-page" class="page">
       <h2>알고리즘의 집합체!<br>'인공지능 오목'.</h2>
       <a href="https://hsh-game.github.io/omok" class="button" target="_blank">바로가기</a>
-  		<canvas id="board" width="1000" height="1000"></canvas>
-
-  		<script src="js/omok/game/core.js"></script>
-  		<script src="js/omok/game/stone.js"></script>
-  		<script src="js/omok/game/ban.js"></script>
-  		<script src="js/omok/game/win.js"></script>
-  		<script src="js/omok/canvas/get.js"></script>
-  		<script src="js/omok/canvas/stone.js"></script>
-  		<script src="js/omok/canvas/board.js"></script>
-  		<script src="js/omok/AI/core.js"></script>
-  		<script src="js/omok/AI/test.js"></script>
-
-      <p id="omok-explain" class="explain">...</p>
-
-      <p class="explain">
-        AI가 서로 대결을 한 상황.<br>
-        <a onclick="game.AIvsAI()">여기</a>를 눌러 다시보기.
-      </p>
 
       <article>
         <div>
@@ -255,20 +237,39 @@
           </div>
         </div>
       </article>
-      <article>
-        <div>
-          <img src="img/club-festival/0.jpg">
-          <p class="explain">
-            알고리즘 동아리의 게임을 홍보하는 모습.
-          </p>
-        </div>
-        <div>
-          <img src="img/club-festival/1.jpg">
-          <p class="explain">
-            동아리 축제를 준비중인 모습.
-          </p>
-        </div>
-      </article>
+
+      <div class="container">
+        <canvas id="board" class=""  width="1000" height="1000"></canvas>
+      </div>
+
+  		<script src="js/omok/game/core.js"></script>
+  		<script src="js/omok/game/stone.js"></script>
+  		<script src="js/omok/game/ban.js"></script>
+  		<script src="js/omok/game/win.js"></script>
+  		<script src="js/omok/canvas/get.js"></script>
+  		<script src="js/omok/canvas/stone.js"></script>
+  		<script src="js/omok/canvas/board.js"></script>
+  		<script src="js/omok/AI/core.js"></script>
+  		<script src="js/omok/AI/test.js"></script>
+
+      <p id="omok-explain" class="explain">...</p>
+
+      <p class="explain">
+        AI가 서로 대결을 한 상황.<br>
+        <a onclick="game.AIvsAI()">여기</a>를 눌러 다시보기.
+      </p>
+
+      <div class="container">
+        <img src="img/club-festival/0.jpg">
+        <p class="explain">
+          알고리즘 동아리의 게임을 홍보하는 모습.
+        </p>
+
+        <img src="img/club-festival/1.jpg">
+        <p class="explain">
+          동아리 축제를 준비중인 모습.
+        </p>
+      </div>
 
       <p class="container">
         이렇게 만든 게임을 12월 말에
