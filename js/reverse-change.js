@@ -13,6 +13,12 @@ new Promise(
         blockHeight = height / len;
   let color = 0; // 0 = black, 1 = white
 
+  function setBg() {
+    $('#reverse-change-page').style.backgroundImage = `url(${
+      canvas.toDataURL()
+    })`;
+  }
+
   for (let i = 0; i < len; i++) {
     for (let k = -1; k < len; k++) {
       const x = k * blockWidth,
@@ -26,18 +32,16 @@ new Promise(
         $('#reverse-change-page').offsetTop +
         $('#reverse-change-page').offsetHeight
         > scrollY
-      ) $('#reverse-change-page').style.backgroundImage = `url(${
-        canvas.toDataURL()
-      })`;
+      ) setBg();
 
       if (color) await wait(100);
-
-      ctx.fillStyle = '#f3f3f3';
-      ctx.fillRect(0, 0, width, height);
     }
   }
 
-  $('#reverse-change-page').style.backgroundImage = `url(${
-    canvas.toDataURL()
-  })`;
+  for (let i = 0; i < 100; i++) {
+    ctx.fillStyle = `rgba(244, 244, 244, ${i/99})`;
+    ctx.fillRect(0, 0, width, height);
+    setBg();
+    await wait(50);
+  }
 });

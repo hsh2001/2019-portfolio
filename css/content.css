@@ -41,16 +41,15 @@ article {
 .skills {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-gap: .5rem;
   margin: 1rem auto;
 }
 
 .skills * {
   padding: 1rem .5rem;
-}
-
-.skills .skill {
-  margin: .5rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
+  background: #ebebeb !important;
+  color: black;
 }
 
 .skills .HTML {
