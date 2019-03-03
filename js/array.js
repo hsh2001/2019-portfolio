@@ -1,4 +1,13 @@
 (function (arr, arrProto, someArr) {
+  arr.from = function (assoc) {
+    let result = [];
+
+    for (let i = 0; i < assoc.length; i++)
+      result.push(assoc[i]);
+
+    return result;
+  }
+
   arrProto.includes || (arrProto.includes = function (searchElement, fromIndex) {
     let a = this;
     fromIndex = parseInt(fromIndex) || 0;

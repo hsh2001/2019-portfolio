@@ -1,5 +1,6 @@
 article {
   display: grid;
+  display: -ms-grid;
   width: 100%;
   max-width: 1250px;
   margin: auto;
@@ -8,11 +9,20 @@ article {
 @media screen and (min-width: 800px) {
   article {
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr;
   }
 
   article > div {
     margin: 1rem;
   }
+}
+
+.grid-first-item {
+  -ms-grid-column: 1;
+}
+
+.grid-second-item {
+  -ms-grid-column: 2;
 }
 
 .container {
@@ -40,7 +50,9 @@ article {
 
 .skills {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 1fr 2fr;
   grid-gap: .5rem;
   margin: 1rem auto;
 }
@@ -123,7 +135,9 @@ article {
 
 #skill-icons {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   align-items: center;
   width: 90%;
